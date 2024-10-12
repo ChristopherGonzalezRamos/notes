@@ -1,0 +1,203 @@
+/* Modo Claro */
+body {
+    background-color: #f8f9fa; /* Color de fondo para modo claro */
+    color: #000; /* Color de texto para modo claro */
+}
+
+.padre {
+    background-color: #ffffff; /* Fondo claro para el contenedor */
+}
+
+.tamaño-imagen {
+    border: 2px solid #ddd; /* Borde ligero para imágenes en modo claro */
+}
+
+.cajatexto {
+    background-color: #ffffff; /* Fondo blanco para los campos de texto */
+    border-color: #ced4da; /* Color de borde para campos de texto */
+}
+
+.cajatexto:focus {
+    outline: 1px solid #007bff; /* Color del contorno al enfocar en modo claro */
+    box-shadow: 0 0 10px rgba(38, 143, 255, 0.5); /* Sombra de enfoque en modo claro */
+}
+
+.btnform {
+    background-color: #007bff; /* Fondo azul para botones en modo claro */
+    border-color: #007bff; /* Color del borde para botones */
+}
+
+.texto {
+    color: #495057; /* Color del texto para el modo claro */
+}
+
+.btnswitch {
+    background-color: #007bff; /* Fondo azul para el botón de alternancia en modo claro */
+    border: none; /* Eliminar el borde del botón */
+    color: #fff; /* Color del texto del botón */
+    font-size: 16px; /* Tamaño del texto del botón */
+}
+
+/* Modo Oscuro */
+.dark-mode {
+    background-color: #343a40; /* Color de fondo para modo oscuro */
+    color: #f8f9fa; /* Color de texto para modo oscuro */
+}
+
+.dark-mode .padre {
+    background-color: #495057; /* Fondo oscuro para el contenedor */
+}
+
+.dark-mode .tamaño-imagen {
+    border: 2px solid #6c757d; /* Borde más oscuro para imágenes en modo oscuro */
+}
+
+.dark-mode .cajatexto {
+    background-color: #6c757d; /* Fondo oscuro para los campos de texto */
+    border-color: #495057; /* Color de borde para campos de texto en modo oscuro */
+}
+
+.dark-mode .cajatexto:focus {
+    outline: 1px solid #0d6efd; /* Color del contorno al enfocar en modo oscuro */
+    box-shadow: 0 0 10px rgba(13, 110, 253, 0.5); /* Sombra de enfoque en modo oscuro */
+}
+
+.dark-mode .btnform {
+    background-color: #0d6efd; /* Fondo azul para botones en modo oscuro */
+    border-color: #0d6efd; /* Color del borde para botones en modo oscuro */
+}
+
+.dark-mode .texto {
+    color: #e9ecef; /* Color del texto para el modo oscuro */
+}
+
+.dark-mode .btnswitch {
+    background-color: #0d6efd; /* Fondo azul para el botón de alternancia en modo oscuro */
+    border: none; /* Eliminar el borde del botón */
+    color: #fff; /* Color del texto del botón */
+    font-size: 16px; /* Tamaño del texto del botón */
+}
+
+/* Estilos para el botón de cerrar sesión */
+.dark-mode .btn-logout {
+    background-color: #dc3545; /* Fondo rojo para el botón de cerrar sesión en modo oscuro */
+}
+
+/* Estilos para los íconos de alternancia */
+.switch-icon {
+    font-size: 20px; /* Tamaño del ícono */
+    margin-right: 8px; /* Espaciado entre ícono y texto */
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    border: 1px solid #dee2e6;
+    padding: 0.75rem;
+    text-align: left;
+}
+
+.table th {
+    background-color: #f8f9fa;
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.perfil-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra el contenido horizontalmente */
+    padding: 20px;
+    height: 100vh; /* Asegura que ocupe toda la altura de la vista */
+    justify-content: top; /* Centra verticalmente el contenido */
+}
+
+.perfil-title {
+    font-size: 32px; /* Tamaño de fuente grande para el título */
+    text-align: center; /* Centra el título */
+    margin-bottom: 30px; /* Espacio debajo del título */
+}
+
+.profile-content {
+    text-align: left; /* Alinea el texto a la izquierda */
+    width: 100%;
+    max-width: 600px; /* Limita el ancho máximo del contenido */
+}
+
+.profile-data {
+    font-size: 24px; /* Tamaño de fuente grande */
+    margin-bottom: 15px; /* Espacio entre párrafos */
+}
+
+.profile-image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Estilo para Perfil*/
+
+.profile-image-label {
+    display: block;
+    width: 300px; /* Aumenta el tamaño del cuadrado */
+    height: 300px; /* Aumenta el tamaño del cuadrado */
+    border: 4px solid #ccc; /* Aumenta el grosor del contorno */
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.profile-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.placeholder-image {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px; /* Ajusta el tamaño del texto dentro del cuadrado */
+    color: #777;
+}
+
+.profile-image-text {
+    margin-top: 10px; /* Ajusta el espacio entre el cuadrado y el texto */
+    font-size: 16px; /* Aumenta el tamaño del texto */
+    color: #555;
+}
+
+/* Estilo para configuraciones*/
+
+.settings-container {
+    transition: transform 0.3s ease;
+    z-index: 1000; /* Asegúrate de que esté por encima de otros elementos */
+    border-right: 1px solid #ddd; /* Línea de separación */
+}
+
+.settings-container.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+.settings-container.light-mode {
+    background-color: #f8f9fa;
+    color: #000;
+}
+
+.settings-container h3 {
+    font-size: 1rem; /* Tamaño del texto del título */
+    margin-bottom: 15px;
+}
+
+.settings-container .dark-mode-toggle {
+    font-size: 0.9rem; /* Tamaño del texto de los botones de toggle */
+}
